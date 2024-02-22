@@ -11,8 +11,8 @@ function solution(S) {
     if (!finishedLetters.includes(lowercase)) {
       //check if upper and lower case exists
       if (S.includes(lowercase) && S.includes(uppercase)) {
-        // Update the result if it is empty or if the lowercase letter is  larger than the current result
-        if (!result || lowercase > result) {
+        // if the lowercase letter is larger than the current result
+        if (lowercase > result) {
           result = lowercase;
         }
       }
